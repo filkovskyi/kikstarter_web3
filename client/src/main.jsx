@@ -6,9 +6,9 @@ import { StateContextProvider } from './context';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
+//activeChain <ThirdwebProvider activeChain={ChainId.Goerli}>
 root.render(
-  <ThirdwebProvider network={ChainId.Goerli}>
+  <ThirdwebProvider activeChain={ChainId.Goerli}>
     <Router>
       <StateContextProvider>
         <App />

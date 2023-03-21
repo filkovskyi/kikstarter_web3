@@ -20,6 +20,7 @@ const CreateCampaign = () => {
     image: ''
   });
 
+  //contract.call("createCampaign", _owner: string, _title: string, _description: string, _target: BigNumberish, _deadline: BigNumberish, _image: string): 
   const handleFormFieldChange = (fieldName, e) => {
     setForm({ ...form, [fieldName]: e.target.value })
   }
